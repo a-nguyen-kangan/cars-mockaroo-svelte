@@ -6,8 +6,16 @@
     }
 </script>
 
+<div>
 <p>This is the cars component</p>
 
 {#each carsList as car}
     <p>{car.rego} - {car.make} - {car.model}</p>
 {/each}
+</div>
+
+<style>
+    div {
+        background-color: green;
+    }
+</style>

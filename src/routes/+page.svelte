@@ -43,10 +43,13 @@
 </script>
 
 <h1>Mockaroo Cars application</h1>
-<input type="text" placeholder="Enter a car rego" bind:value={newRego}/>
-<input type="text" placeholder="Enter a car make" bind:value={newMake}/>
-<input type="text" placeholder="Enter a car model" bind:value={newModel}/>
-<button on:click={addCar}>Add Car</button>
+<div class="input">
+    <input type="text" placeholder="Enter a car rego" bind:value={newRego}/>
+    <input type="text" placeholder="Enter a car make" bind:value={newMake}/>
+    <input type="text" placeholder="Enter a car model" bind:value={newModel}/>
+    <br>
+    <button on:click={addCar}>Add Car</button>
+</div>
 
 {#await promise}
     <p>Sorry for the wait, just getting the cars</p>
@@ -66,5 +69,9 @@
 <style>
   h1 {
     color: red;
+  }
+
+  .input {
+    background-color: yellow;
   }
 </style>
