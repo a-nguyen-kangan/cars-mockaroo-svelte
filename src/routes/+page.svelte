@@ -4,6 +4,7 @@
     let newMake = "Ford";
     let newModel = "Falcon";
 
+
     let cars = [
                     {rego: "ABC123", make: "Toyota", model: "Corolla"},
                     {rego: "DEF456", make: "Toyota", model: "Camry"},
